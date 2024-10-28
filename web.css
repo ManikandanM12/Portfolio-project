@@ -182,7 +182,7 @@ font-size: 12em;
     display: flex;
 justify-content: center;
 align-items: center;
-border: 8px solid rgb(0, 162, 255);
+border: 8px solid rgb(0, 153, 255);
 border-radius: 70px;
 margin: 20px;
 margin-top: 20px;
@@ -194,7 +194,7 @@ padding: 50px;
     animation: para_anime 0.8s ease-in-out;
     background-color: #1f85fa;
     padding: 50px;
-    border: 8px solid rgb(0, 0, 0);
+    border: 8px solid rgb(122, 122, 122);
     
   }
   @keyframes para_anime{
@@ -336,15 +336,17 @@ align-items: center;
   /* z-index: 1000; */
 }
 .Tools .separate_tools .sep_tool{
-background-color: #e7e7e7;
+background-color: #e0e0e0;
 }
 
-.Tools .separate_tools .sep_tool:hover{
-  width: 340px;
-  height: 340px;
+
  
-  background-color: rgb(47, 0, 255);
-}
+  
+  .Tools .separate_tools .sep_tool img:hover{
+    width: 300px;
+    height: 300px;
+  }
+
 
 @keyframes tools_anim{
   from{transform: rotateY(0deg);
@@ -361,10 +363,7 @@ background-color: #e7e7e7;
   border-radius: 20px;
 
 }
-.Tools .separate_tools .sep_tool img:hover{
-  width: 300px;
-  height: 300px;
-}
+
 @media only screen and (max-width: 800px) {
   .resume{
      margin-top: 300px;
@@ -449,7 +448,7 @@ height: 300px;
 }
 .Project .separate_projects .sep_project img:hover{
 animation: project_anime 1s;
-border: 5px solid rgb(0, 153, 255);
+border: 10px solid rgb(0, 153, 255);
 width: 440px;
 height: 330px;
 }
@@ -502,33 +501,38 @@ height: 330px;
     height:240px;
     width: 70%;
     border: 8px solid rgb(0, 119, 255);
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(2, 2, 2);
     border-radius: 30px;
      z-index: 1;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: row;
+    padding: 10px;
   }
   @media only screen and (max-width: 700px) {
     .iconbox{
     width: 90%;
-    margin-left: 10px;
-    margin-right: 10px;
+ 
+    margin-left: 0px;
+    margin-right: 20px;
     }
   }
-  .iconbox i{
+  .iconbox img{
    position: relative;
-    font-size: 140px;
+   
     padding: 10px;
  z-index: 100;
+ width: 200px;
+ height: 200px;
+ border-radius: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   @media only screen and (max-width: 700px) { 
   
-  .iconbox i{font-size: 100px;}}
+  .iconbox img{width: 100px;height: 100px;padding: 10px;}}
 
 
   .fa-square-behance{
@@ -555,29 +559,29 @@ height: 330px;
   .fa-square-github{
     color: rgb(255, 255, 255);
   }
-  .fa-square-github:hover{
+  .github:hover{
     font-size: 130px;
     
   
-    box-shadow:0px 0px 20px #ffffff;
+    box-shadow:0px 0px 30px #ffffff;
   }
-  .fa-square-instagram:hover{
-    font-size: 130px;
+  .insta:hover{
+
     
 
-    box-shadow:0px 0px 20px #ff0055;
+    box-shadow:0px 0px 30px #ff0055;
   }
-  .fa-square-behance:hover{
+  /* .iconbox img:hover{
     font-size: 130px;
     
 
     box-shadow:0px 0px 20px #0077ff;
-  }
-  .fa-linkedin:hover{
+  } */
+  .behance:hover{
     font-size: 130px;
     
 
-    box-shadow:0px 0px 20px #0084ff;
+    box-shadow:0px 0px 30px #0084ff;
   }
   .contact{
     display: flex;
